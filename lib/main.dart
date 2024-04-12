@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:qrcode/Home_page.dart';
+import 'package:qrcode/qr_scanner.dart';
+import 'package:qrcode/result_screen.dart';
+
 
 
 void main() {
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
       title: 'QR Code Generator and Scanner',
       debugShowCheckedModeBanner: false,
       darkTheme: ThemeData.dark(useMaterial3: true).copyWith(),
-      home: HomePage()   
+      home: QRScanner(),
       );
   }
 }
